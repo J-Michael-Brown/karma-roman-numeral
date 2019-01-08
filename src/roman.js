@@ -1,17 +1,22 @@
 // Business logic
-export function numberColumnParser(numberString) {
-
-  var reversedNumberArray = numberString.split("").reverse();
-  var results= [];
-  reversedNumberArray.forEach(function(numberToParse,i) {
-    results.push(columnBuilder(i,parseInt(numberToParse)))
-  })
-  return results.reverse().join('').toString()
+export function numberColumnParser(number) {
+  if (number <= 0) {
+    return "Number cannot be negative or zero";
+  } else if (number > 3999) {
+    return "Number is too big";
+  } else {
+    var reversedNumberArray = number.toString().split("").reverse();
+    var results= [];
+    reversedNumberArray.forEach(function(numberToParse,i) {
+      results.push(columnBuilder(i,parseInt(numberToParse)));
+    });
+    return results.reverse().join('').toString();
+  }
 }
 
 function columnBuilder(numberIndex, num) {
 
-  var altNumerals = ["I","V","X","L","C","D","M"]
+  var altNumerals = ["I","V","X","L","C","D","M"];
   var column = numberIndex*2;
 
   if (num === 1) {

@@ -23,7 +23,5 @@ $(document).ready(function() {
       $("#roman-numeral").text(romanNumeral).show();
 
     }
-  })
-
-    // console.log()
+  });
 });
