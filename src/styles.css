@@ -1,0 +1,45 @@
+form {
+  padding: 5%;
+  padding-bottom: 10px;
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+.results {
+    margin: 10px;
+    margin-top: 40px;
+
+}
+
+#button-div {
+
+  margin: 50px 50px 0px;
+
+}
+
+p {
+  text-align: center;
+}
+
+.charriot {
+  margin: auto;
+  display: none;
+}
+
+.charriot p {
+  font-family: serif;
+  position: relative;
+  top: 135px;
+  right: 25px;
+
+}
+
+.error-message {
+  display: none;
+}
+
+.charriot {
+
+  height: 264px;
+  width: 340px;
+}
